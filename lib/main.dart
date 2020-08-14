@@ -1,25 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    myapp()
-  );
+  runApp(MyApp());
 }
-class myapp extends StatelessWidget {
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.black,
-            title: Text('Mumbai Movement Academy'),
-          ),
-          body: Center(
-              child: Image(
-                  image: AssetImage('images/icon.png')
-              )
-          )
-      ),
-    );
+        home: Scaffold(
+            backgroundColor: Colors.white,
+            body: SafeArea(
+                child: Center(
+                    child: Image(image: AssetImage("images/icon.png"))))));
   }
 }
