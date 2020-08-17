@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     CircleAvatar(
                       radius: 100.0,
@@ -39,8 +40,17 @@ class MyApp extends StatelessWidget {
                         fontSize: 20.0,
                       ),
                     ),
+                    SizedBox(
+                      height: 25.0,
+                      width: 150.0,
+                      child: Divider(
+                        color: Colors.black,
+                      ),
+                    ),
                     Text(
-                        "Rishi Prasad is a doctor that will diagnose your aches, sprains and poor attitudes. With more than a decade of parkour experience, he is also one of the founders of Mumbai Parkour."),
+                      "Rishi Prasad is a doctor that will diagnose your aches, sprains and poor attitudes. With more than a decade of parkour experience, he is also one of the founders of Mumbai Parkour.",
+                      style: TextStyle(fontSize: 18.0),
+                    ),
                     SizedBox(
                       height: 25.0,
                       width: 150.0,
@@ -54,7 +64,7 @@ class MyApp extends StatelessWidget {
                           Icons.phone,
                           color: Colors.lightBlue[600],
                         ),
-                        title: Text("1-800"),
+                        title: Text("1-800-555-5555"),
                       ),
                     ),
                     Card(
@@ -63,7 +73,7 @@ class MyApp extends StatelessWidget {
                           Icons.mail,
                           color: Colors.lightBlue[600],
                         ),
-                        title: Text("email"),
+                        title: Text("email@gmail.com"),
                       ),
                     ),
                   ],
